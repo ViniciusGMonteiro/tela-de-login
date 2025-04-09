@@ -1,2 +1,6 @@
 
-.subtitle { align-items: center; color: brown;}
+body { 
+    width: 100vh;
+    background-color: aquamarine;}
+
+.subtitle { align-items: center; color: rgb(12, 131, 177);}
