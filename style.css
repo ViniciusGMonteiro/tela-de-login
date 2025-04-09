@@ -2,7 +2,7 @@
 body { 
     width: 100vh;
     background-color: rgb(24, 232, 255);}
+  
+.subtitle { align-items: center; color: rgb(29, 31, 32); display: flex;}
 
-.subtitle { align-items: center; color: rgb(29, 31, 32); }
-
-.login-container {display: flex; align-items: center; justify-content: center;}
+.login-container {display: flex; align-items: center; justify-content: space-between}
