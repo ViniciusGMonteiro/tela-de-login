@@ -1,8 +1,8 @@
 
 body { 
     width: 100vh;
-    background-color: rgb(5, 5, 5);}
+    background-color: rgb(24, 232, 255);}
 
-.subtitle { align-items: center; color: rgb(12, 131, 177); }
+.subtitle { align-items: center; color: rgb(29, 31, 32); }
 
 .login-container {display: flex; align-items: center; }
