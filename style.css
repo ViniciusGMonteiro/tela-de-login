@@ -5,4 +5,4 @@ body {
   
 .subtitle { align-items: center; color: rgb(29, 31, 32); display: flex;}
 
-.login-container {display: flex; align-items: center; justify-content: space-between}
+.login-container {background-color: rgb(28, 28, 27); }
