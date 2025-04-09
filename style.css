@@ -5,4 +5,4 @@ body {
 
 .subtitle { align-items: center; color: rgb(29, 31, 32); }
 
-.login-container {display: flex; align-items: center; }
+.login-container {display: flex; align-items: center; justify-content: center;}
