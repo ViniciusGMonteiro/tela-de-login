@@ -1,0 +1,58 @@
+
+
+.Login-container {
+    background-color: var(--card-bg);
+    width: 100%;
+    max-width: 420px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+   
+}
+.Login-container::before
+{ content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-color));
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.rem;
+    color: var(---tex-secundary);
+}
+
+.subtitle {
+    color: var(---tex-secundary);
+    font-size: 0.95rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+label {
+    display: flex;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.input-group´{
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--input-bg);
+    border: 1px solid rgb(0, 0, 0);
+    
+}
