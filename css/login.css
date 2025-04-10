@@ -1,6 +1,5 @@
-
-
-.Login-container {
+@import "reset.css";
+.login-container {
     background-color: var(--card-bg);
     width: 100%;
     max-width: 420px;
@@ -8,28 +7,31 @@
     box-shadow: var(--box-shadow);
     padding: 2.5rem;
     position: relative;
-    overflow: hidden;
-   
+    overflow: hidden;  
 }
-.Login-container::before
-{ content: ''; 
+.login-container::before{
+    content: ''; 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 5px;
-    background: linear-gradient(90deg, var(--primary-color));
+    background-color: linear-gradient(90deg, var(--primary-color)),
+    #9c88ff;
 }
-
+header{
+    margin-bottom: 2rem;
+    text-align: center;
+}
 h1 {
     font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 0.rem;
-    color: var(---tex-secundary);
+    color: var(---text-secundary);
 }
 
 .subtitle {
-    color: var(---tex-secundary);
+    color: var(---text-secundary);
     font-size: 0.95rem;
 }
 
@@ -53,32 +55,41 @@ input {
     width: 100%;
     padding: 1rem;
     background-color: var(--input-bg);
-    border: 1px solid rgb(0, 0, 0);
-    
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    color: var(---text-secundary);
+    font-size: 1rem;
+    transition: var(--transition);
 }
 
 input:focus {
     outline: none; 
     border-color: var(--primary-color); 
-    box-shadow: 0 0 3px rgb(0, 0, 0);
+    box-shadow: 0 0 3px rgba(108, 99, 255, 0.2);
 }
 i
-input::placeholder {color: var(---tex-secundary);}
+input::placeholder {
+    color: var(---text-secundary);
+}
 
-.forgot-passowrd { text-align: right;
- margin-top: 0.5rem;}
+.forget-password { 
+    text-align: right;
+    margin-top: 0.5rem;
+}
 
-.forgot-passowrd a {
-    color: var(---tex-secundary);
+.forget-passowrd a {
+    color: var(---text-secundary);
     font-size: 0.85rem;
     text-decoration: none;
     transition: var(--transition);
 }
-.forgot-passowrd a:hover {
+.forget-passowrd a:hover {
     color: var(--primary-color);
 }
 
-.options {display: flex;align-items: center; 
+.options {
+    display: flex;
+    align-items: center; 
     justify-content: space-between; 
     margin-bottom: 1.5rem;
 }
@@ -123,4 +134,71 @@ button :active {
     transform: translateY(0);
 }
 
+.divider { 
+    display: flex;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.divider::before,
+.divider::after{
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: rgba(rgba(9, 9, 9, 0.941) );
+}
+
+.divider span {
+    padding: 0 1rem;
+    color: var(--border-radius);
+    font-size: 0.85rem;
+}
+
+.social Login {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-btn { 
+color: var(--text-primary);
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 48px;
+height: 48px;
+border-radius: 50%;
+background-color: var(--input-bg);
+border: 1px solid rgba(9, 9, 9, 0.941);
+cursor: pointer;
+transition: var(--transition);
+ }
+ 
+ .social-btn:hover {
+    background-color: rgba(9, 9, 9, 0.941);
+    transform: translateY(-5px);
+    color: var(---text-secundary);
+    font-size: 0.9rem;
+ }
+.singup-link {text-align: center;
+    margin-top: 1.5rem;
+    color: var(---text-secundary);
+
+}
+
+
+ .singup-link a {color: var(--primary-color);
+text-decoration: none;
+font-weight: 600;
+transition: var(--transition);}
+
+.singup-link a:hover{text-decoration: underline;}
+
+@media (max-widh : 480px) {
+    .login-container {
+        padding: 2rem 1.5rem;
+    }
+}
 
