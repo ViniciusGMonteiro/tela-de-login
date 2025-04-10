@@ -56,3 +56,71 @@ input {
     border: 1px solid rgb(0, 0, 0);
     
 }
+
+input:focus {
+    outline: none; 
+    border-color: var(--primary-color); 
+    box-shadow: 0 0 3px rgb(0, 0, 0);
+}
+i
+input::placeholder {color: var(---tex-secundary);}
+
+.forgot-passowrd { text-align: right;
+ margin-top: 0.5rem;}
+
+.forgot-passowrd a {
+    color: var(---tex-secundary);
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
+.forgot-passowrd a:hover {
+    color: var(--primary-color);
+}
+
+.options {display: flex;align-items: center; 
+    justify-content: space-between; 
+    margin-bottom: 1.5rem;
+}
+
+.remember-me { display: flex; 
+    align-items: center;
+    cursor: pointer;}
+
+.remember-me input {
+    width: auto;
+    margin-right: 0.5rem;
+    accent-color: var(--primary-color);
+}
+
+.remember-me label{
+    margin-bottom: 0;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(2px);
+}
+button :active {
+    transform: translateY(0);
+}
+
+
